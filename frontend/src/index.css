@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply min-h-screen bg-cyber-950 text-cyber-100 font-body;
+  background-image:
+    linear-gradient(135deg, rgba(8, 17, 31, 0.9) 0%, rgba(4, 7, 13, 0.96) 45%, rgba(8, 17, 31, 0.96) 100%),
+    radial-gradient(circle at top right, rgba(89, 179, 245, 0.16), transparent 40%);
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+.glass-panel {
+  @apply border border-cyber-700 bg-cyber-900/70 backdrop-blur-md shadow-scanner;
+}
+
+.panel-title {
+  @apply text-sm uppercase tracking-[0.28em] text-cyber-300;
+}
+
+.panel-subtitle {
+  @apply text-cyber-200/75;
+}
+
+.text-grid {
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle at 1px 1px, rgba(89, 179, 245, 0.12) 1px, transparent 1px);
+}
+
+.input-base {
+  @apply w-full rounded-md border border-cyber-600 bg-cyber-900 px-3 py-2 text-cyber-100 outline-none transition focus:border-cyber-300 focus:ring-2 focus:ring-cyber-400/30;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md bg-cyber-400 px-4 py-2 font-semibold text-cyber-950 transition hover:bg-cyber-300 disabled:cursor-not-allowed disabled:opacity-70;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-md border border-cyber-500 px-4 py-2 font-semibold text-cyber-200 transition hover:bg-cyber-700;
+}

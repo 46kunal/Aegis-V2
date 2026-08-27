@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+frontend/dist/
+generated-reports/
+dump.rdb
+backend/**/__pycache__/
+backend/**/*.pyc
+frontend/**/__pycache__/
+frontend/**/*.pyc
+*.log
